@@ -1,0 +1,25 @@
+a = [1,2,3,4,5]
+a.reverse()
+a
+[5, 4, 3, 2, 1]
+
+******************************
+
+a = [1,1,2,2,2,2,3,3,3]
+b = 2
+a.count(b)
+4
+
+******************************
+
+a = 'ana are mere si nu are pere'
+a.count(' ') + 1
+7
+
+or
+
+a = 'ana are mere si nu are pere'
+len(a.split())
+7
+
+
