@@ -1,0 +1,49 @@
+def str_split(a):
+    ext = []
+    if len(a) % 2 != 0:
+        a += '_'
+    while a:
+        ext.append(a[:2])
+        a = a[2:]
+    print(ext)
+
+
+def str_reverse(a):
+    b = ''
+    fin = ''
+    for i in a:
+        if i == ' ':
+            fin += b + i
+            b = ''
+        else:
+            b = i + b
+    fin += b
+    print(fin)
+
+
+class Human:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+
+class Man(Human):
+    pass
+
+
+class Woman(Human):
+    pass
+
+
+def god_job():
+    arr = []
+    m = Man('Adam', 34)
+    w = Woman('Eve', 30)
+    arr = [m.name, w.name]
+    print(arr)
+
+
+str_split('abc')
+str_reverse('This is an example!')
+str_reverse('double  spaces')
+god_job()
